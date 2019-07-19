@@ -5,11 +5,11 @@ import App from './App';
 
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter basename='/'>
 <App />
-  </BrowserRouter>
+  </HashRouter>
   , document.getElementById('root'));
 
