@@ -9,18 +9,18 @@ class App extends Component {
     return (
       <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
+        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to={process.env.PUBLIC_URL +"/"}>MyPortfolio</Link>} scroll>
             <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to={process.env.PUBLIC_URL +"/resume"}>Resume</Link>
+                <Link to={process.env.PUBLIC_URL +"/contact"}>Contact</Link>
+                <Link to={process.env.PUBLIC_URL +"/projects"}>Projects</Link>
             </Navigation>
         </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
+        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to={process.env.PUBLIC_URL +"/"}>MyPortfolio</Link>}>
             <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/contact">Contact</Link>
-              <Link to="/projects">Projects</Link>
+                 <Link to={process.env.PUBLIC_URL +"/resume"}>Resume</Link>
+                <Link to={process.env.PUBLIC_URL +"/contact"}>Contact</Link>
+                <Link to={process.env.PUBLIC_URL +"/projects"}>Projects</Link>
             </Navigation>
         </Drawer>
         <Content>
